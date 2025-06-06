@@ -6,21 +6,45 @@
 }
 
 @theme inline {
+  --color-primary: #3871C1;
+  --color-text: #181918;
+  --color-text2: #232323;
+  --color-accent: #EEF3F9;
+  --color-bkg1: #F8FAFD;
+  --color-bkg2: #F6F6F6;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* For large screens and above */
+@media (min-width: 1024px) {
+  .clippy {
+    clip-path: ellipse(90% 100% at 50% 0%);
+  }
+}
+
+/* For screens below large */
+@media (max-width: 1023.98px) {
+  .clippy {
+    clip-path: ellipse(150% 100% at 50% 0%);
+  }
 }
