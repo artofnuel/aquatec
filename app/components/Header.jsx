@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <header className="mx-auto h-[90px] w-full max-w-7xl p-4 lg:p-0">
       <nav className="relative flex h-full w-full items-center justify-between">
-        <MotionSlideDown>
+        <MotionSlideDown speed={0.3}>
           <Link href="/">
             <Image
               src={Assets.logo}
@@ -46,7 +46,7 @@ const Header = () => {
         </MotionSlideDown>
 
         {/* desktop menu */}
-        <MotionSlideDown className="hidden lg:flex">
+        <MotionSlideDown speed={0.3} className="hidden lg:flex">
           {navLinks.map((link) => (
             <Link
               href={link.href}
@@ -57,7 +57,7 @@ const Header = () => {
             </Link>
           ))}
         </MotionSlideDown>
-        <MotionSlideDown className="hidden lg:flex">
+        <MotionSlideDown speed={0.3} className="hidden lg:flex">
           <Link
             href="/contact"
             className="bg-primary hover:text-primary border-primary flex h-[50px] w-[195px] items-center justify-center rounded-lg border text-white transition-all duration-300 ease-in-out hover:bg-white"
@@ -84,6 +84,7 @@ const Header = () => {
         <AnimatePresence>
           {isNavOpen && (
             <MotionSlideDown
+              speed={0.3}
               key="mobile-nav"
               className="text-text fixed top-[90px] left-0 z-50 flex h-[calc(100vh-90px)] w-full flex-col items-center justify-start gap-2 divide-y divide-[#ECE8FF]/40 border-t border-t-[#ECE8FF] bg-white pt-10 lg:hidden"
             >

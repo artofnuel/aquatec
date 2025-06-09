@@ -48,10 +48,10 @@ const FrequentlyAsked = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className={`h-auto w-full p-4 ${location === "/contact" ? "bg-primary text-white" : "text-text2 bg-white"}`}
+      className={`h-auto w-full overflow-hidden p-4 ${location === "/contact" ? "bg-primary text-white" : "text-text2 bg-white"}`}
       id="faqs"
     >
-      <section className="mx-auto my-10 flex h-auto w-full max-w-7xl flex-col gap-4 xl:my-20 xl:flex-row">
+      <section className="mx-auto my-10 flex h-auto w-full max-w-7xl flex-col gap-4 overflow-hidden xl:my-20 xl:flex-row">
         <div className="flex w-full flex-col gap-4 xl:w-1/3">
           <p className="bg-accent text-primary w-fit rounded-full p-1 px-3">
             FAQS
