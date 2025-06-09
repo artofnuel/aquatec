@@ -7,4 +7,13 @@ const useNavStore = create((set) => ({
   toggleNav: () => set((state) => ({ isNavOpen: !state.isNavOpen })),
 }));
 
+// FAQ Zustand store
+export const useFaqStore = create((set) => ({
+  openIndex: null,
+  setOpenIndex: (idx) =>
+    set((state) => ({
+      openIndex: state.openIndex === idx ? null : idx,
+    })),
+}));
+
 export default useNavStore;

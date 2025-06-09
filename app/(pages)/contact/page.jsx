@@ -1,7 +1,14 @@
 import React from "react";
+import ContactHero from "./components/ContactHero";
+import FrequentlyAsked from "../company/components/FrequentlyAsked";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <main>
+      <ContactHero />
+      <FrequentlyAsked />
+    </main>
+  );
 };
 
 export default Contact;

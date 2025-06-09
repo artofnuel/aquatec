@@ -22,6 +22,20 @@ export const Assets = {
   download: require("../assets/download.svg").default,
   contact: require("../assets/contact.svg").default,
   pattern: require("../assets/pattern.svg").default,
+  reliability: require("../assets/reliability.svg").default,
+  innovation: require("../assets/innovation.svg").default,
+  customer: require("../assets/customer.svg").default,
+  logistics: require("../assets/logistics.svg").default,
+  quality: require("../assets/quality.svg").default,
+  sustainable: require("../assets/sustainable.svg").default,
+  ceo: require("../assets/ceo.png"),
+  group_image1: require("../assets/group_image1.png"),
+  group_image2: require("../assets/group_image2.png"),
+  group_image3: require("../assets/group_image3.png"),
+  group_image4: require("../assets/group_image4.png"),
+  group_image5: require("../assets/group_image5.png"),
+  group_image6: require("../assets/group_image6.png"),
+  group_image_mobile: require("../assets/group_image_mobile.png"),
 };
 
 export const FeaturesData = [
@@ -165,14 +179,108 @@ export const SocialsData = [
 export const CompanyLinks = [
   {
     name: "Company",
-    links: ["/#features", "/company"],
+    links: [
+      { name: "Features", href: "/#features" },
+      { name: "Company", href: "/company" },
+    ],
   },
   {
     name: "Support",
-    links: ["/faqs", "/blog", "/contact"],
+    links: [
+      { name: "FAQS", href: "/company/#faqs" },
+      { name: "Blog", href: "/blog" },
+      { name: "Contact", href: "/contact" },
+    ],
   },
   {
     name: "Legal",
-    links: ["/terms-and-conditions", "/privacy"],
+    links: [
+      { name: "Terms and Conditions", href: "/terms-and-conditions" },
+      { name: "Privacy Policy", href: "/privacy" },
+    ],
+  },
+];
+
+export const GroupImages = [
+  { image: Assets.group_image1, height: "h-[450px]" },
+  { image: Assets.group_image2, height: "h-[370px]" },
+  { image: Assets.group_image3, height: "h-[280px]" },
+  { image: Assets.group_image4, height: "h-[280px]" },
+  { image: Assets.group_image5, height: "h-[370px]" },
+  { image: Assets.group_image6, height: "h-[450px]" },
+];
+
+export const ValuesData = [
+  {
+    title: "Reliability",
+    description: `We deliver on our promises — every order, every time. Our customers can always count on us for prompt, dependable service.`,
+    icon: Assets.reliability,
+  },
+  {
+    title: "Innovation",
+    description: `We embrace technology to improve the way people access water, making delivery smarter, faster, and more efficient.`,
+    icon: Assets.innovation,
+  },
+  {
+    title: "Customer-Centricity",
+    description: `Your satisfaction drives everything we do. We listen, we adapt, and we're always improving to meet your needs.`,
+    icon: Assets.customer,
+  },
+  {
+    title: "Convenience",
+    description: `From flexible ordering to doorstep delivery, we prioritize ease at every step. Hydration should be hassle-free.`,
+    icon: Assets.logistics,
+  },
+  {
+    title: "Quality",
+    description: `We work only with trusted water brands and suppliers to ensure every drop meets the highest standards of safety and purity.`,
+    icon: Assets.quality,
+  },
+  {
+    title: "Sustainability",
+    description: `We're committed to responsible sourcing and eco-conscious practices that help protect our environment and future.`,
+    icon: Assets.sustainable,
+  },
+];
+
+export const TeamData = [
+  {
+    name: "Simeon Best",
+    role: "Founder & CEO",
+    image: Assets.ceo,
+  },
+  {
+    name: "John Doe",
+    role: "Founder & CEO",
+    image: Assets.avatar,
+  },
+  {
+    name: "John Doe",
+    role: "Founder & CEO",
+    image: Assets.avatar,
+  },
+  {
+    name: "John Doe",
+    role: "Founder & CEO",
+    image: Assets.avatar,
+  },
+];
+
+export const FaqsData = [
+  {
+    question: "How does Aquatec work?",
+    answer: `Aquatec is a water delivery app that connects you with trusted water brands. You can browse, order, and receive water right at your doorstep.`,
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: `We accept various payment methods including credit/debit cards, mobile wallets, and bank transfers.`,
+  },
+  {
+    question: "Can I schedule my deliveries?",
+    answer: `Yes! You can choose to have your water delivered on a one-time basis or set up a subscription for regular deliveries.`,
+  },
+  {
+    question: "What if I have an issue with my order?",
+    answer: `Our customer support team is here to help. You can reach out via the app or our website for assistance with any issues.`,
   },
 ];

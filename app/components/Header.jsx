@@ -13,7 +13,7 @@ const Header = () => {
   const navLinks = [
     { name: "Features", href: "/#features" }, // <-- update this line
     { name: "Company", href: "/company" },
-    { name: "Faqs", href: "/faqs" },
+    { name: "Faqs", href: "/company#faqs" },
     { name: "Blog", href: "/blog" },
   ];
 

@@ -30,7 +30,7 @@ const Features = () => {
                 />
               </div>
               <div className="flex h-auto w-full flex-col items-start justify-center gap-5 xl:h-full xl:w-1/2 xl:p-6">
-                <p className="bg-accent text-primary w-fit rounded-full p-1 px-3">
+                <p className="bg-accent text-primary mt-4 w-fit rounded-full p-1 px-3 xl:mt-0">
                   {feature.title}
                 </p>
                 <h3 className="text-2xl font-bold xl:text-5xl">
