@@ -67,18 +67,20 @@ const Header = () => {
         </MotionSlideDown>
 
         {/* nav menu */}
-        <div className="block lg:hidden">
-          <button
-            onClick={toggleNav}
-            className="bg-primary size-10 rounded-md p-2"
-          >
-            {!isNavOpen ? (
-              <IoMenu className="rounded-md text-2xl text-white" />
-            ) : (
-              <IoClose className="rounded-md text-2xl text-white" />
-            )}
-          </button>
-        </div>
+        <MotionSlideDown>
+          <div className="block lg:hidden">
+            <button
+              onClick={toggleNav}
+              className="bg-primary size-10 rounded-md p-2"
+            >
+              {!isNavOpen ? (
+                <IoMenu className="rounded-md text-2xl text-white" />
+              ) : (
+                <IoClose className="rounded-md text-2xl text-white" />
+              )}
+            </button>
+          </div>
+        </MotionSlideDown>
 
         {/* Mobile nav, only show if isNavOpen */}
         <AnimatePresence>

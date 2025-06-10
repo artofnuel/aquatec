@@ -30,6 +30,7 @@ export const Assets = {
   quality: require("../assets/quality.svg").default,
   sustainable: require("../assets/sustainable.svg").default,
   ceo: require("../assets/ceo.png").default,
+  dummy: require("../assets/dummy.png").default,
   group_image1: require("../assets/group_image1.png").default,
   group_image2: require("../assets/group_image2.png").default,
   group_image3: require("../assets/group_image3.png").default,

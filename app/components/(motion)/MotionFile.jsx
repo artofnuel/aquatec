@@ -61,6 +61,7 @@ export const MotionSlideRight = ({ children, speed, ...props }) => {
       exit="exit"
       transition={{ duration: speed, ease: "easeInOut" }}
       {...props}
+      className="h-auto w-auto"
     >
       {children}
     </motion.div>
