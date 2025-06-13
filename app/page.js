@@ -7,7 +7,7 @@ import Download from "./components/Download";
 
 export default function Home() {
   return (
-    <main className="h-auto w-full">
+    <main className="h-auto w-full overflow-hidden">
       <Hero />
       <Features />
       <Explore />
