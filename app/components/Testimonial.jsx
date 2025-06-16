@@ -5,7 +5,7 @@ import { MotionSlideDown } from "./(motion)/MotionFile";
 
 const Testimonial = () => {
   return (
-    <main className="h-auto w-full p-4">
+    <main className="h-auto w-full p-4 xl:min-h-[85vh]">
       <MotionSlideDown speed={0.3}>
         <section className="mx-auto h-auto w-full max-w-7xl xl:h-[555px]">
           <div className="flex flex-col items-center justify-center py-5">

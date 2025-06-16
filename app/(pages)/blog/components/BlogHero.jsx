@@ -4,7 +4,7 @@ import React from "react";
 
 const BlogHero = () => {
   return (
-    <main className="text-text2 h-auto w-full overflow-hidden p-4 xl:my-20">
+    <main className="text-text2 h-auto w-full overflow-hidden p-4 xl:mt-5 xl:mb-20">
       <MotionFadeIn speed={0.3}>
         <section className="mx-auto flex h-auto w-full max-w-7xl flex-col items-center justify-start gap-5">
           <div className="flex h-auto w-full flex-col items-center justify-center py-5">

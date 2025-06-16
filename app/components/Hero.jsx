@@ -12,15 +12,15 @@ const Hero = () => {
   return (
     <main className="h-screen w-full overflow-hidden p-4">
       <MotionFadeIn speed={0.3}>
-        <section className="bg-primary relative flex h-full w-full flex-col items-center justify-between gap-5 overflow-hidden rounded-lg text-white">
+        <section className="bg-primary relative flex h-auto w-full flex-col items-center justify-between gap-5 overflow-hidden rounded-[25px] text-white xl:h-full xl:rounded-[50px]">
           <div className="clippy absolute -top-20 z-0 h-full w-full bg-white/20"></div>
           <MotionSlideDown speed={0.6}>
             <div className="relative z-10 flex h-full w-full flex-col items-center justify-center gap-5 text-center">
-              <h1 className="mt-20 text-center text-4xl font-bold lg:mt-10 lg:text-6xl">
+              <h1 className="mt-20 text-center text-3xl font-bold lg:mt-10 lg:text-6xl">
                 Stay Hydrated,
                 <br /> Anytime, Anywhere
               </h1>
-              <p className="text-center text-base font-medium lg:text-xl">
+              <p className="w-4/5 text-center text-base font-medium lg:text-xl">
                 Order top water brands and get them delivered to your door.
                 One-time or on a<br className="hidden lg:block" /> schedule—
                 <br className="block lg:hidden" />

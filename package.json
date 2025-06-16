@@ -9,14 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/icons": "^3.7.0",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.92.0",
     "classnames": "^2.5.1",
     "framer-motion": "^12.16.0",
     "next": "15.3.3",
+    "next-sanity": "^9.12.0",
     "prettier-plugin-tailwindcss": "^0.6.12",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-phone-input-2": "^2.15.1",
+    "sanity": "^3.92.0",
+    "styled-components": "^6.1.19",
     "zustand": "^5.0.5"
   },
   "devDependencies": {

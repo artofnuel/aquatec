@@ -24,7 +24,7 @@ const ContactHero = () => {
     <main className="text-text2 mb-10 h-auto w-full overflow-hidden p-4">
       <MotionFadeIn>
         <section
-          className={`mx-auto flex h-auto w-full max-w-7xl ${submitted ? "flex-col-reverse" : "flex-col"} gap-10 xl:my-20 xl:flex-row`}
+          className={`mx-auto flex h-auto w-full max-w-7xl ${submitted ? "flex-col-reverse" : "flex-col"} gap-10 xl:mt-10 xl:mb-20 xl:flex-row`}
         >
           <div className="flex h-auto w-full flex-col items-center justify-center xl:w-1/2 xl:justify-end">
             <MotionSlideRight speed={0.3}>

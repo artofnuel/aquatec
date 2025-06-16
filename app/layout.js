@@ -47,7 +47,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${myFont.className} antialiased`}>
+      <body className={`${myFont.className} text-pretty antialiased`}>
         <main>
           <Header />
           {children}
