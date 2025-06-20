@@ -1,26 +1,40 @@
-import { Assets } from "@/app/assets";
+"use client";
 import { MotionSlideDown } from "@/app/components/(motion)/MotionFile";
+import { client } from "@/app/sanity/client";
+import imageUrlBuilder from "@sanity/image-url";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { GoArrowDown } from "react-icons/go";
 
 const AllBlogs = ({ blogData = [] }) => {
+  const [visibleCount, setVisibleCount] = useState(9);
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + 9);
+  };
+
+  const { projectId, dataset } = client.config();
+  const urlFor = (source) =>
+    projectId && dataset
+      ? imageUrlBuilder({ projectId, dataset }).image(source)
+      : null;
+
   return (
     <main className="my-10 h-auto w-full overflow-hidden p-4">
       <MotionSlideDown speed={0.6}>
         <section className="mx-auto h-auto w-full max-w-7xl">
           <h3 className="text-2xl font-bold">All Blogs Posts</h3>
           <section className="my-5 grid h-auto w-full grid-cols-1 gap-10 xl:grid-cols-3">
-            {blogData.map((item, index) => (
+            {blogData.slice(0, visibleCount).map((item, index) => (
               <Link
                 key={index}
-                href={item.slug}
+                href={`/blog/${item.slug}`}
                 className="flex h-[520px] w-full flex-col gap-10 p-4 shadow-md"
               >
                 <div className="h-auto w-full">
                   <Image
-                    src={item.image}
+                    src={urlFor(item.image).url()}
                     alt={item.alt}
                     width={1000}
                     height={1000}
@@ -48,7 +62,10 @@ const AllBlogs = ({ blogData = [] }) => {
             ))}
           </section>
           <div className="my-5 mt-16 flex h-auto w-full items-center justify-center">
-            <button className="bg-primary flex cursor-pointer items-center justify-center gap-2 rounded-xl p-3 px-5 text-center text-white">
+            <button
+              onClick={handleLoadMore}
+              className="bg-primary flex cursor-pointer items-center justify-center gap-2 rounded-xl p-3 px-5 text-center text-white"
+            >
               <GoArrowDown />
               Load More
             </button>

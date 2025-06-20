@@ -40,8 +40,16 @@ const myFont = localFont({
 });
 
 export const metadata = {
-  title: "Aquatec",
-  description: "Stay Hydrated, Anytime, Anywhere",
+  title: "Stay Hydrated, Anytime, Anywhere - Aquatec",
+  description: `Order top water brands and get them delivered to your door. One-time or on a
+schedule—Aquatec has you covered. - Aquatec`,
+  // metadataBase: new URL("www.aqu.com"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

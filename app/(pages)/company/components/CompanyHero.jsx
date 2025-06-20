@@ -46,7 +46,7 @@ const CompanyHero = () => {
 
       {/* Images */}
       <MotionSlideUp speed={0.6}>
-        <section className="mx-auto mt-10 hidden w-full max-w-7xl flex-row items-end justify-center gap-4 overflow-x-auto xl:flex">
+        <section className="mx-auto mt-10 hidden w-full max-w-7xl flex-row items-end justify-center gap-4 overflow-hidden xl:flex">
           {GroupImages.map((imgObj, idx) => (
             <div
               key={idx}

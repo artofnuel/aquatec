@@ -1,22 +1,20 @@
 "use client";
-import { Assets } from "@/app/assets";
 import { MotionSlideDown } from "@/app/components/(motion)/MotionFile";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import imageUrlBuilder from "@sanity/image-url";
 import { client } from "@/app/sanity/client";
+import imageUrlBuilder from "@sanity/image-url";
+import React from "react";
 
 const RecentBlogs = ({ blogData = [] }) => {
   console.log(blogData[0].image);
   console.log(blogData[0].alt);
 
-  // const { projectId, dataset } = client.config();
-  // const urlFor = (source) => {
-  //   projectId && dataset
-  //     ? imageUrlBuilder({ projectId, dataset }).image(source)
-  //     : null;
-  // };
+  const { projectId, dataset } = client.config();
+  const urlFor = (source) =>
+    projectId && dataset
+      ? imageUrlBuilder({ projectId, dataset }).image(source)
+      : null;
 
   return (
     <main className="text-text2 h-auto w-full overflow-hidden p-4">
@@ -26,11 +24,11 @@ const RecentBlogs = ({ blogData = [] }) => {
           <div className="mb-5 flex h-auto w-full flex-col gap-8 xl:flex-row">
             {/* Left: Featured Blog */}
             <Link
-              href={blogData[0].slug}
+              href={`/blog/${blogData[0].slug}`}
               className="flex w-full flex-col gap-3 xl:w-1/2"
             >
               <Image
-                src={blogData[0].image}
+                src={urlFor(blogData[0].image).url()}
                 alt={blogData[0].alt}
                 width={1000}
                 height={1000}
@@ -58,7 +56,7 @@ const RecentBlogs = ({ blogData = [] }) => {
                 >
                   <div className="h-[250px] w-full flex-shrink-0 overflow-hidden xl:h-[215px] xl:w-3/5">
                     <Image
-                      src={blog.image}
+                      src={urlFor(blog.image).url()}
                       alt={blog.title}
                       width={1000}
                       height={1000}

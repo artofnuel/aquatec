@@ -270,19 +270,87 @@ export const TeamData = [
 
 export const FaqsData = [
   {
-    question: "How does Aquatec work?",
-    answer: `Aquatec is a water delivery app that connects you with trusted water brands. You can browse, order, and receive water right at your doorstep.`,
+    question: "How do I place an order on Aquatec?",
+    answer: `Simply download the Aquatec app, browse available water brands, select your preferred size and
+quantity, and choose either "Buy Now" or "Subscribe" for recurring deliveries. Complete your order with
+a few taps.`,
   },
   {
-    question: "What payment methods do you accept?",
-    answer: `We accept various payment methods including credit/debit cards, mobile wallets, and bank transfers.`,
+    question: "Can l schedule my deliveries?",
+    answer: `Simply download the Aquatec app, browse available water brands, select your preferred size and
+quantity, and choose either "Buy Now" or "Subscribe" for recurring deliveries. Complete your order with
+a few taps.`,
   },
   {
-    question: "Can I schedule my deliveries?",
+    question: "What types of water are available?",
     answer: `Yes! You can choose to have your water delivered on a one-time basis or set up a subscription for regular deliveries.`,
   },
   {
-    question: "What if I have an issue with my order?",
+    question: "How does subscription work?",
     answer: `Our customer support team is here to help. You can reach out via the app or our website for assistance with any issues.`,
   },
+  {
+    question: "Is there a delivery fee?",
+    answer: `Our customer support team is here to help. You can reach out via the app or our website for assistance with any issues.`,
+  },
+  {
+    question: "Can l track my order?",
+    answer: `Our customer support team is here to help. You can reach out via the app or our website for assistance with any issues.`,
+  },
+  {
+    question: "How do l earn and use my Coins?",
+    answer: `Our customer support team is here to help. You can reach out via the app or our website for assistance with any issues.`,
+  },
+  {
+    question: "What if I have a problem with my order?",
+    answer: `Our customer support team is here to help. You can reach out via the app or our website for assistance with any issues.`,
+  },
+];
+
+export const termsData = [
+  ` Acceptance of Terms
+By accessing and using the Aquatech website and services, you agree to comply with these Terms and Conditions. If you do not agree, please do not use our services.`,
+
+  ` Services
+Aquatech provides water delivery services through various subscription plans. We reserve the right to modify or discontinue any service without prior notice.`,
+
+  ` Subscription Plans
+- Flexible Options : Monthly, mid-year, or annual subscriptions.
+- Non-Refundable Payments: Payments are processed automatically and are non-refundable.
+- Easy Cancellation : Cancel your subscription anytime through your account settings.`,
+
+  ` App Requirement
+💧 To use our services, you must have the Aquatech app. Complaints and support requests will only be attended to through the app.`,
+
+  ` Delivery
+- Timely Delivery :Delivery times may vary based on location and availability.
+- Accurate Information: You must provide accurate delivery details. Aquatech is not responsible for delays due to incorrect addresses.
+- Re-Delivery Charges: If you're not available to receive your order, a charge will apply for the second delivery attempt. We provide tracking details for easy follow-up.`,
+
+  ` Non-Refundable Policy
+Once your order has been processed, it is subject to a non-refundable policy.`,
+
+  ` User Accounts
+Each Aquatech user is allowed only one account Duplicate accounts may be suspended or terminated.`,
+
+  `Pricing
+- Dynamic Pricing:Prices are subject to change. We will notify you of any changes before they take effect.
+- Taxes and Fees: All prices exclude taxes and fees, which will be added at checkout.`,
+
+  ` Rewards Program
+💦 Aquatech coins earned through purchases can be redeemed for future orders or subscription renewals. Coins have no cash value and cannot be transferred.`,
+
+  ` User Responsibilities
+- You agree to use our services for lawful purposes only
+- Do not engage in any activities that could harm our services, website, or users.`,
+
+  ` Limitation of Liability
+Aquatech is not liable for any direct, indirect, incidental, or consequential damages arising from your use of our services.`,
+
+  ` Changes to Terms
+We may update these Terms and Conditions periodically. Significant changes will be communicated via email or through our website.`,
+
+  ` Governing Law
+These Terms and Conditions are governed by the laws of Nigeria. Any disputes will be resolved in the appropriate courts.
+For questions or concerns regarding these Terms and Conditions, please contact us at aquatech@gmail.com`,
 ];

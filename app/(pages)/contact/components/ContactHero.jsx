@@ -2,22 +2,56 @@
 import { Assets } from "@/app/assets";
 import {
   MotionFadeIn,
-  MotionSlideLeft,
   MotionSlideRight,
 } from "@/app/components/(motion)/MotionFile";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 const ContactHero = () => {
-  const [phone, setPhone] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-  const handleSubmit = (e) => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+    phone: "",
+  });
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const onChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const onPhoneChange = (value) => {
+    setFormData({ ...formData, phone: value });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    const emailjsData = {
+      name: `${formData.firstName} ${formData.lastName}`,
+      email: formData.email,
+      message: formData.message,
+      phone: formData.phone,
+    };
+    try {
+      await emailjs.send(serviceID, templateID, emailjsData, userID);
+      setSubmitted(true);
+    } catch (error) {
+      alert("Failed to send message.");
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -58,6 +92,8 @@ const ContactHero = () => {
                         type="text"
                         placeholder="First Name"
                         name="firstName"
+                        value={formData.firstName}
+                        onChange={onChange}
                         required
                       />
                     </label>
@@ -68,6 +104,8 @@ const ContactHero = () => {
                         type="text"
                         placeholder="Last Name"
                         name="lastName"
+                        value={formData.lastName}
+                        onChange={onChange}
                         required
                       />
                     </label>
@@ -79,6 +117,8 @@ const ContactHero = () => {
                       type="email"
                       placeholder="Email"
                       name="email"
+                      value={formData.email}
+                      onChange={onChange}
                       required
                     />
                   </label>
@@ -86,8 +126,8 @@ const ContactHero = () => {
                     Phone Number
                     <PhoneInput
                       country={"us"}
-                      value={phone}
-                      onChange={setPhone}
+                      value={formData.phone}
+                      onChange={onPhoneChange}
                       inputClass="!rounded-lg !border !border-[#D0D5DD] !bg-white !p-2 !pl-10 !w-full"
                       buttonClass="!bg-white !border-[#D0D5DD] !border-t !border-l !border-b !border-r-0"
                       inputProps={{
@@ -100,8 +140,11 @@ const ContactHero = () => {
                   <label className="flex flex-col gap-2">
                     Message
                     <textarea
+                      value={formData.message}
+                      onChange={onChange}
                       className="appearance-none rounded-lg border border-[#D0D5DD] p-2"
                       name="message"
+                      rows={4}
                       required
                     ></textarea>
                   </label>
@@ -124,8 +167,38 @@ const ContactHero = () => {
                       </a>
                     </p>
                   </div>
-                  <button className="bg-primary mt-10 cursor-pointer rounded-xl p-3 text-center text-white">
-                    Send message
+                  <button
+                    type="submit"
+                    disabled={submitted || loading}
+                    className="bg-primary hover:bg-primary flex w-full items-center justify-center rounded px-4 py-2 text-white transition disabled:opacity-50"
+                  >
+                    {loading ? (
+                      <>
+                        Please wait...
+                        <svg
+                          className="ml-2 h-5 w-5 animate-spin text-white"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <circle
+                            className="opacity-25"
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                          ></circle>
+                          <path
+                            className="opacity-75"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                          ></path>
+                        </svg>
+                      </>
+                    ) : (
+                      "Send message"
+                    )}
                   </button>
                 </form>
               </>
