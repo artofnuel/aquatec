@@ -30,20 +30,20 @@ const Download = () => {
               seconds.
             </p>
             <div className="flex gap-5 xl:ml-20">
-              <a href="#" className="flex items-center">
-                <Image
-                  src={Assets.apple_store}
-                  alt="Apple Store Link"
-                  className="w-auto"
-                />
-              </a>
-              <a href="#" className="flex items-center">
-                <Image
-                  src={Assets.android_store}
-                  alt="Android Store Link"
-                  className="w-auto"
-                />
-              </a>
+              {/* <a href="#" className="flex items-center"> */}
+              <Image
+                src={Assets.apple_store}
+                alt="Apple Store Link"
+                className="w-auto"
+              />
+              {/* </a> */}
+              {/* <a href="#" className="flex items-center"> */}
+              <Image
+                src={Assets.android_store}
+                alt="Android Store Link"
+                className="w-auto"
+              />
+              {/* </a> */}
             </div>
           </div>
           <div className="relative flex h-full w-full items-center justify-center xl:w-1/2">

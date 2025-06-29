@@ -18,7 +18,7 @@ const Footer = () => {
           <p className="text-xs xl:text-base">
             ©️2025 AQUATEC LTD. All rights reserved.
           </p>
-          <div className="flex items-start justify-center gap-2">
+          {/* <div className="flex items-start justify-center gap-2">
             {SocialsData.map((item, index) => (
               <a
                 key={index}
@@ -30,7 +30,7 @@ const Footer = () => {
                 {item.icon}
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-5 flex w-full flex-col items-center justify-center gap-3 xl:mt-0 xl:flex-row xl:items-start xl:justify-between">

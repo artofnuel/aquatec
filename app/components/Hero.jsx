@@ -27,20 +27,20 @@ const Hero = () => {
                 Aquatec has you covered.
               </p>
               <div className="mt-5 flex w-full flex-col items-center justify-center gap-5 lg:mt-0 lg:flex-row">
-                <Link href="#">
-                  <Image
-                    src={Assets.apple_store}
-                    alt="Aquatec apple store link"
-                    className="h-auto w-[150px]"
-                  />
-                </Link>
-                <Link href="#">
-                  <Image
-                    src={Assets.android_store}
-                    alt="Aquatec android store link"
-                    className="w-[150px]"
-                  />
-                </Link>
+                {/* <Link href="#"> */}
+                <Image
+                  src={Assets.apple_store}
+                  alt="Aquatec apple store link"
+                  className="h-auto w-[150px]"
+                />
+                {/* </Link> */}
+                {/* <Link href="#"> */}
+                <Image
+                  src={Assets.android_store}
+                  alt="Aquatec android store link"
+                  className="w-[150px]"
+                />
+                {/* </Link> */}
               </div>
             </div>
           </MotionSlideDown>

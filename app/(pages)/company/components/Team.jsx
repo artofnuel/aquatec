@@ -21,11 +21,9 @@ const Team = () => {
               <MotionSlideUp key={index} speed={0.6}>
                 <div className="mx-auto flex max-w-3xl flex-col items-center gap-1">
                   <Image
-                    src={
-                      member.image.default ? member.image.default : member.image
-                    }
+                    src={member.image}
                     alt={member.name}
-                    className="size-[80px]"
+                    className="size-[80px] rounded-full object-cover object-top"
                   />
                   <p className="text-base font-semibold xl:text-lg">
                     {member.name}

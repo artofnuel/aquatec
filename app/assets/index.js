@@ -17,6 +17,16 @@ export const Assets = {
   timely_icon: require("../assets/timely_icon.svg").default,
   earn_icon: require("../assets/earn_icon.svg").default,
   avatar: require("../assets/avatar.svg").default,
+  jane: require("../assets/jane.jpg").default,
+  brian: require("../assets/brian.jpg").default,
+  paul: require("../assets/paul.jpg").default,
+  jason: require("../assets/jason.jpg").default,
+  christy: require("../assets/christy.jpg").default,
+  ceo: require("../assets/ceo.jpg").default,
+  emmanuel: require("../assets/emmanuel.jpg").default,
+  salome: require("../assets/salome.jpg").default,
+  judith: require("../assets/judith.jpg").default,
+  faceless: require("../assets/faceless.jpg").default,
   fill_star_icon: require("../assets/fill_star_icon.svg").default,
   outline_star_icon: require("../assets/outline_star_icon.svg").default,
   download: require("../assets/download.png").default,
@@ -29,7 +39,6 @@ export const Assets = {
   logistics: require("../assets/logistics.svg").default,
   quality: require("../assets/quality.svg").default,
   sustainable: require("../assets/sustainable.svg").default,
-  ceo: require("../assets/ceo.png").default,
   dummy: require("../assets/dummy.png").default,
   group_image1: require("../assets/group_image1.png").default,
   group_image2: require("../assets/group_image2.png").default,
@@ -89,8 +98,8 @@ export const ExploreData = [
 export const TestimonialsData = [
   {
     id: 1,
-    name: "Sarah Musa",
-    avatar: Assets.avatar,
+    name: "Jane Ndiamaka",
+    avatar: Assets.jane,
     rating: [
       Assets.fill_star_icon,
       Assets.fill_star_icon,
@@ -102,8 +111,8 @@ export const TestimonialsData = [
   },
   {
     id: 2,
-    name: "Sarah Musa",
-    avatar: Assets.avatar,
+    name: "Brian Okeke",
+    avatar: Assets.brian,
     rating: [
       Assets.fill_star_icon,
       Assets.fill_star_icon,
@@ -115,8 +124,8 @@ export const TestimonialsData = [
   },
   {
     id: 3,
-    name: "Sarah Musa",
-    avatar: Assets.avatar,
+    name: "C.",
+    avatar: Assets.faceless,
     rating: [
       Assets.fill_star_icon,
       Assets.fill_star_icon,
@@ -128,8 +137,8 @@ export const TestimonialsData = [
   },
   {
     id: 4,
-    name: "Sarah Musa",
-    avatar: Assets.avatar,
+    name: "Jason Okafor",
+    avatar: Assets.jason,
     rating: [
       Assets.fill_star_icon,
       Assets.fill_star_icon,
@@ -141,8 +150,8 @@ export const TestimonialsData = [
   },
   {
     id: 5,
-    name: "Sarah Musa",
-    avatar: Assets.avatar,
+    name: "P.",
+    avatar: Assets.faceless,
     rating: [
       Assets.fill_star_icon,
       Assets.fill_star_icon,
@@ -252,54 +261,50 @@ export const TeamData = [
     image: Assets.ceo,
   },
   {
-    name: "John Doe",
-    role: "Founder & CEO",
-    image: Assets.avatar,
+    name: "Judith Uduimoh",
+    role: "Product Manager",
+    image: Assets.judith,
   },
   {
-    name: "John Doe",
-    role: "Founder & CEO",
-    image: Assets.avatar,
+    name: "Emmanuel Inua",
+    role: "Frontend Developer",
+    image: Assets.emmanuel,
   },
   {
-    name: "John Doe",
-    role: "Founder & CEO",
-    image: Assets.avatar,
+    name: "Salome Osha",
+    role: "Product Designer",
+    image: Assets.salome,
   },
 ];
 
 export const FaqsData = [
   {
     question: "How do I place an order on Aquatec?",
-    answer: `Simply download the Aquatec app, browse available water brands, select your preferred size and
-quantity, and choose either "Buy Now" or "Subscribe" for recurring deliveries. Complete your order with
-a few taps.`,
+    answer: `Simply download the Aquatec app, browse available water brands, select your preferred size and quantity, and choose either "Buy Now" or "Subscribe" for recurring deliveries. Complete your order with a few taps.`,
   },
   {
-    question: "Can l schedule my deliveries?",
-    answer: `Simply download the Aquatec app, browse available water brands, select your preferred size and
-quantity, and choose either "Buy Now" or "Subscribe" for recurring deliveries. Complete your order with
-a few taps.`,
-  },
-  {
-    question: "What types of water are available?",
+    question: "Can I schedule my deliveries?",
     answer: `Yes! You can choose to have your water delivered on a one-time basis or set up a subscription for regular deliveries.`,
   },
   {
+    question: "What types of water are available?",
+    answer: `Aquatec offers a wide range of trusted water brands in bottles and dispensers. You can filter by size, type, and brand to find exactly what you need.`,
+  },
+  {
     question: "How does subscription work?",
-    answer: `Our customer support team is here to help. You can reach out via the app or our website for assistance with any issues.`,
+    answer: `Subscriptions allow you to receive water deliveries on a recurring basis. You can set the frequency (daily, weekly, or monthly).`,
   },
   {
     question: "Is there a delivery fee?",
-    answer: `Our customer support team is here to help. You can reach out via the app or our website for assistance with any issues.`,
+    answer: `Delivery fees may vary based on your location.`,
   },
   {
     question: "Can l track my order?",
-    answer: `Our customer support team is here to help. You can reach out via the app or our website for assistance with any issues.`,
+    answer: `Yes, you'll receive real-time updates on your order status, and you can track your delivery from the moment it leaves the supplier to when it arrives at your door.`,
   },
   {
     question: "How do l earn and use my Coins?",
-    answer: `Our customer support team is here to help. You can reach out via the app or our website for assistance with any issues.`,
+    answer: `You earn coins with every order and referral. These coins can be redeemed for discounts when purchasing.`,
   },
   {
     question: "What if I have a problem with my order?",
@@ -309,10 +314,10 @@ a few taps.`,
 
 export const termsData = [
   ` Acceptance of Terms
-By accessing and using the Aquatech website and services, you agree to comply with these Terms and Conditions. If you do not agree, please do not use our services.`,
+By accessing and using the Aquatec website and services, you agree to comply with these Terms and Conditions. If you do not agree, please do not use our services.`,
 
   ` Services
-Aquatech provides water delivery services through various subscription plans. We reserve the right to modify or discontinue any service without prior notice.`,
+Aquatec provides water delivery services through various subscription plans. We reserve the right to modify or discontinue any service without prior notice.`,
 
   ` Subscription Plans
 - Flexible Options : Monthly, mid-year, or annual subscriptions.
@@ -320,37 +325,86 @@ Aquatech provides water delivery services through various subscription plans. We
 - Easy Cancellation : Cancel your subscription anytime through your account settings.`,
 
   ` App Requirement
-💧 To use our services, you must have the Aquatech app. Complaints and support requests will only be attended to through the app.`,
+💧 To use our services, you must have the Aquatec app. Complaints and support requests will only be attended to through the app.`,
 
   ` Delivery
 - Timely Delivery :Delivery times may vary based on location and availability.
-- Accurate Information: You must provide accurate delivery details. Aquatech is not responsible for delays due to incorrect addresses.
+- Accurate Information: You must provide accurate delivery details. Aquatec is not responsible for delays due to incorrect addresses.
 - Re-Delivery Charges: If you're not available to receive your order, a charge will apply for the second delivery attempt. We provide tracking details for easy follow-up.`,
 
   ` Non-Refundable Policy
 Once your order has been processed, it is subject to a non-refundable policy.`,
 
   ` User Accounts
-Each Aquatech user is allowed only one account Duplicate accounts may be suspended or terminated.`,
+Each Aquatec user is allowed only one account Duplicate accounts may be suspended or terminated.`,
 
   `Pricing
 - Dynamic Pricing:Prices are subject to change. We will notify you of any changes before they take effect.
 - Taxes and Fees: All prices exclude taxes and fees, which will be added at checkout.`,
 
   ` Rewards Program
-💦 Aquatech coins earned through purchases can be redeemed for future orders or subscription renewals. Coins have no cash value and cannot be transferred.`,
+💦 Aquatec coins earned through purchases can be redeemed for future orders or subscription renewals. Coins have no cash value and cannot be transferred.`,
 
   ` User Responsibilities
 - You agree to use our services for lawful purposes only
 - Do not engage in any activities that could harm our services, website, or users.`,
 
   ` Limitation of Liability
-Aquatech is not liable for any direct, indirect, incidental, or consequential damages arising from your use of our services.`,
+Aquatec is not liable for any direct, indirect, incidental, or consequential damages arising from your use of our services.`,
 
   ` Changes to Terms
 We may update these Terms and Conditions periodically. Significant changes will be communicated via email or through our website.`,
 
   ` Governing Law
 These Terms and Conditions are governed by the laws of Nigeria. Any disputes will be resolved in the appropriate courts.
-For questions or concerns regarding these Terms and Conditions, please contact us at aquatech@gmail.com`,
+For questions or concerns regarding these Terms and Conditions, please contact us at Aquatec@gmail.com`,
+];
+
+export const policyData = [
+  ` Introduction
+At Aquatec, we prioritize your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you access our services.`,
+
+  ` We may collect the following types of information:
+- Personal Information : When you create an account or place an order, we collect your name, email address, phone number, and delivery address.
+- Usage Data : We gather information about how you interact with our app and website, including your IP address, browser type, and pages visited.`,
+
+  ` We use cookies and similar technologies to enhance your experience and collect data. 
+Cookies are small files stored on your device that help us understand how you use our website and improve our services. You can manage cookie settings through your browser.`,
+
+  ` How We Use Your Information
+Aquatec uses your information for several purposes, including:
+- To provide, maintain, and improve our services.
+- To process your orders and manage your subscriptions.
+- To communicate with you regarding your account, orders, and promotional offers.
+- To analyze usage patterns and enhance user experience.`,
+
+  ` Lawful Basis for Processing Data
+We process your personal data based on the following lawful bases:
+- Consent : When you provide explicit consent for us to process your data.
+- Contractual Necessity : To fulfill our obligations under a contract with you, such as processing your orders.
+- Legal Compliance : To comply with legal obligations or respond to lawful requests for information.
+- Legitimate Interests : To pursue our legitimate interests in providing and improving our services, as long as your rights do not override those interests.`,
+
+  ` Sharing Your Information
+We do not sell or rent your personal information to third parties. However, we may share your data with:
+- Service Providers : Trusted third-party companies that assist us in delivering our services.
+- Legal Compliance : When required by law or to protect our rights and the rights of others.`,
+
+  ` Data Security
+We implement robust security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. While we strive to protect your data, please be aware that no method of transmission over the internet is completely secure.`,
+
+  ` Core Values: Transparency
+We believe in transparency regarding how we handle your data. We are committed to providing clear information about our data practices and your rights.`,
+
+  ` Your Rights
+You have certain rights regarding your personal information, including:
+- The right to access the personal information we hold about you.
+- The right to request corrections to your data if it is inaccurate or incomplete.
+- The right to request the deletion of your personal information, subject to legal obligations.`,
+
+  ` Changes to This Privacy Policy
+We may update this Privacy Policy periodically. We will notify you of any significant changes via email or through our website. Your continued use of our services after such changes constitutes your acceptance of the revised policy.`,
+
+  ` Contact Us
+If you have any questions or concerns regarding this Privacy Policy, please contact us at Aquatec.`,
 ];

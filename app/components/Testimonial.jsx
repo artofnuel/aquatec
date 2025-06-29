@@ -36,7 +36,7 @@ const Testimonial = () => {
                   <Image
                     src={testimonial.avatar}
                     alt={testimonial.name}
-                    className="h-12 w-12 rounded-full"
+                    className="h-12 w-12 rounded-full object-cover object-top"
                   />
                   <div>
                     <p>{testimonial.name}</p>
