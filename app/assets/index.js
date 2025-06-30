@@ -357,7 +357,7 @@ We may update these Terms and Conditions periodically. Significant changes will 
 
   ` Governing Law
 These Terms and Conditions are governed by the laws of Nigeria. Any disputes will be resolved in the appropriate courts.
-For questions or concerns regarding these Terms and Conditions, please contact us at Aquatec@gmail.com`,
+For questions or concerns regarding these Terms and Conditions, please contact us at support@myaquatec.com`,
 ];
 
 export const policyData = [
@@ -406,5 +406,5 @@ You have certain rights regarding your personal information, including:
 We may update this Privacy Policy periodically. We will notify you of any significant changes via email or through our website. Your continued use of our services after such changes constitutes your acceptance of the revised policy.`,
 
   ` Contact Us
-If you have any questions or concerns regarding this Privacy Policy, please contact us at Aquatec.`,
+If you have any questions or concerns regarding this Privacy Policy, please contact us at support@myaquatec.com.`,
 ];

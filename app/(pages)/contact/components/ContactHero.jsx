@@ -157,14 +157,9 @@ const ContactHero = () => {
                     />
                     <p>
                       You agree to our friendly{" "}
-                      <a
-                        className="underline"
-                        href="http://"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      <Link className="underline" href="/privacy">
                         privacy policy.
-                      </a>
+                      </Link>
                     </p>
                   </div>
                   <button
