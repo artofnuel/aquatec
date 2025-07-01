@@ -34,12 +34,17 @@ export async function generateMetadata({ params, searchParams }, parent) {
   return {
     title: post.title + ` - Aquatec`,
     description: post.description,
-    // metadataBase: new URL(""),
+    metadataBase: new URL(`www.myaquatec.com/blog/${slug}`),
     alternates: {
       canonical: `/` + post.slug,
       languages: {
         "en-US": "/en-US",
       },
+    },
+    icons: {
+      icon: "/icon.svg", // or "/favicon.ico" if you prefer
+      shortcut: "/icon.svg",
+      apple: "/icon.svg",
     },
   };
 }

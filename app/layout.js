@@ -43,12 +43,17 @@ export const metadata = {
   title: "Stay Hydrated, Anytime, Anywhere - Aquatec",
   description: `Order top water brands and get them delivered to your door. One-time or on a
 schedule—Aquatec has you covered. - Aquatec`,
-  // metadataBase: new URL("www.aqu.com"),
+  metadataBase: new URL("www.myaquatec.com"),
   alternates: {
     canonical: "/",
     languages: {
       "en-US": "/en-US",
     },
+  },
+  icons: {
+    icon: "/icon.svg", // or "/favicon.ico" if you prefer
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
   },
 };
 

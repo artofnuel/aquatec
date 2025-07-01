@@ -5,12 +5,17 @@ import FrequentlyAsked from "../company/components/FrequentlyAsked";
 export const metadata = {
   title: "Contact Us - Aquatec",
   description: "Our friendly team would love to hear from you. - Aquatec",
-  // metadataBase: new URL(""),
+  metadataBase: new URL("www.myaquatec.com/contact"),
   alternates: {
     canonical: "/contact",
     languages: {
       "en-US": "/en-US",
     },
+  },
+  icons: {
+    icon: "/icon.svg", // or "/favicon.ico" if you prefer
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
   },
 };
 
