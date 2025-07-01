@@ -5,7 +5,7 @@ export const metadata = {
   title: "Stay Informed. Stay Hydrated - Aquatec",
   description:
     "Subscribe to our newsletter to get the latest blog drops straight to your inbox! - Aquatec",
-  metadataBase: new URL("www.myaquatec.com/privacy"),
+  metadataBase: new URL("https://www.myaquatec.com/privacy"),
   alternates: {
     canonical: "/privacy",
     languages: {

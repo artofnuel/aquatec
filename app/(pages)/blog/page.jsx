@@ -8,7 +8,7 @@ export const metadata = {
   title: "Stay Informed. Stay Hydrated - Aquatec",
   description:
     "Subscribe to our newsletter to get the latest blog drops straight to your inbox! - Aquatec",
-  metadataBase: new URL("www.myaquatec.com/blog"),
+  metadataBase: new URL("https://www.myaquatec.com/blog"),
   alternates: {
     canonical: "/blog",
     languages: {

@@ -43,7 +43,7 @@ export const metadata = {
   title: "Stay Hydrated, Anytime, Anywhere - Aquatec",
   description: `Order top water brands and get them delivered to your door. One-time or on a
 schedule—Aquatec has you covered. - Aquatec`,
-  metadataBase: new URL("www.myaquatec.com"),
+  metadataBase: new URL("https://www.myaquatec.com"),
   alternates: {
     canonical: "/",
     languages: {

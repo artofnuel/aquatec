@@ -9,7 +9,7 @@ export const metadata = {
   title: "Refreshing Convenience, One Delivery at a Time - Aquatec",
   description:
     "At Aquatec, we believe access to clean, quality water should be easy, reliable, and stress-free. - Aquatec",
-  metadataBase: new URL("www.myaquatec.com/company"),
+  metadataBase: new URL("https://www.myaquatec.com/company"),
   alternates: {
     canonical: "/company",
     languages: {

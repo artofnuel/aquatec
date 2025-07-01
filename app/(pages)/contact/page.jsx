@@ -5,7 +5,7 @@ import FrequentlyAsked from "../company/components/FrequentlyAsked";
 export const metadata = {
   title: "Contact Us - Aquatec",
   description: "Our friendly team would love to hear from you. - Aquatec",
-  metadataBase: new URL("www.myaquatec.com/contact"),
+  metadataBase: new URL("https://www.myaquatec.com/contact"),
   alternates: {
     canonical: "/contact",
     languages: {

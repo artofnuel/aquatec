@@ -34,7 +34,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
   return {
     title: post.title + ` - Aquatec`,
     description: post.description,
-    metadataBase: new URL(`www.myaquatec.com/blog/${slug}`),
+    metadataBase: new URL(`https://www.myaquatec.com/blog/${slug}`),
     alternates: {
       canonical: `/` + post.slug,
       languages: {

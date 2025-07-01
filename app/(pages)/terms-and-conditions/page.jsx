@@ -5,7 +5,7 @@ export const metadata = {
   title: "Stay Informed. Stay Hydrated - Aquatec",
   description:
     "Subscribe to our newsletter to get the latest blog drops straight to your inbox! - Aquatec",
-  metadataBase: new URL("www.myaquatec.com/terms-and-conditions"),
+  metadataBase: new URL("https://www.myaquatec.com/terms-and-conditions"),
   alternates: {
     canonical: "/terms-and-conditions",
     languages: {
