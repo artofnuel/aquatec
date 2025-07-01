@@ -13,9 +13,9 @@ export const metadata = {
     },
   },
   icons: {
-    icon: "/logo.png", // or "/favicon.ico" if you prefer
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/icon.svg", // or "/favicon.ico" if you prefer
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
   },
   openGraph: {
     title: "Stay Hydrated, Anytime, Anywhere - Aquatec",
