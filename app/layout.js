@@ -51,9 +51,9 @@ schedule—Aquatec has you covered. - Aquatec`,
     },
   },
   icons: {
-    icon: "/icon.svg", // or "/favicon.ico" if you prefer
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
+    icon: "/logo.png", // or "/favicon.ico" if you prefer
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   openGraph: {
     title: "Stay Hydrated, Anytime, Anywhere - Aquatec",
