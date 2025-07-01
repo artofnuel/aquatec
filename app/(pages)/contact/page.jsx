@@ -24,7 +24,7 @@ export const metadata = {
     siteName: "Aquatec",
     images: [
       {
-        url: "/logo.png", // Place your image in the public folder
+        url: "../public/logo.png", // Place your image in the public folder
         width: 63.04,
         height: 93.22,
         alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
