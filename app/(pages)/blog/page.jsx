@@ -26,14 +26,14 @@ export const metadata = {
       "Subscribe to our newsletter to get the latest blog drops straight to your inbox! - Aquatec",
     url: "https://www.myaquatec.com/blog",
     siteName: "Aquatec",
-    // images: [
-    //   {
-    //     url: "../public/logo.png", // Place your image in the public folder
-    //     width: 63.04,
-    //     height: 93.22,
-    //     alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://myaquatec.com/logo.png", // Your logo/preview image
+        width: 63.04,
+        height: 93.22,
+        alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },

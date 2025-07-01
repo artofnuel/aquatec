@@ -61,32 +61,29 @@ schedule—Aquatec has you covered. - Aquatec`,
 schedule—Aquatec has you covered. - Aquatec`,
     url: "https://www.myaquatec.com",
     siteName: "Aquatec",
-    // images: [
-    //   {
-    //     url: "../public/logo.png", // Place your image in the public folder
-    //     width: 63.04,
-    //     height: 93.22,
-    //     alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://myaquatec.com/logo.png", // Your logo/preview image
+        width: 63.04,
+        height: 93.22,
+        alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
+      },
+    ],
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Stay Hydrated, Anytime, Anywhere - Aquatec",
+    description: `Order top water brands and get them delivered to your door. One-time or on a
+schedule—Aquatec has you covered. - Aquatec`,
+    images: ["https://yourwebsite.com/og-image.jpg"],
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta property="og:image" content="<generated>" />
-        <meta property="og:image:type" content="<generated>" />
-        <meta property="og:image:width" content="<generated>" />
-        <meta property="og:image:height" content="<generated>" />
-        <meta name="twitter:image" content="<generated>" />
-        <meta name="twitter:image:type" content="<generated>" />
-        <meta name="twitter:image:width" content="<generated>" />
-        <meta name="twitter:image:height" content="<generated>" />
-      </head>
       <body className={`${myFont.className} text-pretty antialiased`}>
         <main>
           <Header />

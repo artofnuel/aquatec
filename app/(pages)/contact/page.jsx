@@ -22,14 +22,14 @@ export const metadata = {
     description: `Our friendly team would love to hear from you. - Aquatec`,
     url: "https://www.myaquatec.com/contact",
     siteName: "Aquatec",
-    // images: [
-    //   {
-    //     url: "../public/logo.png", // Place your image in the public folder
-    //     width: 63.04,
-    //     height: 93.22,
-    //     alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://myaquatec.com/logo.png", // Your logo/preview image
+        width: 63.04,
+        height: 93.22,
+        alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },

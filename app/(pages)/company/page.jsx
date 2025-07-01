@@ -26,14 +26,14 @@ export const metadata = {
     description: `At Aquatec, we believe access to clean, quality water should be easy, reliable, and stress-free. - Aquatec`,
     url: "https://www.myaquatec.com/company",
     siteName: "Aquatec",
-    // images: [
-    //   {
-    //     url: "../public/logo.png", // Place your image in the public folder
-    //     width: 63.04,
-    //     height: 93.22,
-    //     alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://myaquatec.com/logo.png", // Your logo/preview image
+        width: 63.04,
+        height: 93.22,
+        alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
