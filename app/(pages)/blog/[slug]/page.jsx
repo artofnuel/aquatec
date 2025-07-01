@@ -41,24 +41,24 @@ export async function generateMetadata({ params, searchParams }, parent) {
         "en-US": "/en-US",
       },
     },
-    icons: {
-      icon: "/icon.svg", // or "/favicon.ico" if you prefer
-      shortcut: "/icon.svg",
-      apple: "/icon.svg",
-    },
+    // icons: {
+    //   icon: "/icon.svg", // or "/favicon.ico" if you prefer
+    //   shortcut: "/icon.svg",
+    //   apple: "/icon.svg",
+    // },
     openGraph: {
       title: post.title + ` - Aquatec`,
       description: post.description,
       url: `https://www.myaquatec.com/blog/${slug}`,
       siteName: "Aquatec",
-      images: [
-        {
-          url: "../public/logo.png", // Place your image in the public folder
-          width: 63.04,
-          height: 93.22,
-          alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
-        },
-      ],
+      // images: [
+      //   {
+      //     url: "../public/logo.png", // Place your image in the public folder
+      //     width: 63.04,
+      //     height: 93.22,
+      //     alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
+      //   },
+      // ],
       locale: "en_US",
       type: "website",
     },
