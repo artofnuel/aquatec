@@ -20,6 +20,23 @@ export const metadata = {
     shortcut: "/icon.svg",
     apple: "/icon.svg",
   },
+  openGraph: {
+    title: "Stay Hydrated, Anytime, Anywhere - Aquatec",
+    description:
+      "Subscribe to our newsletter to get the latest blog drops straight to your inbox! - Aquatec",
+    url: "https://www.myaquatec.com/blog",
+    siteName: "Aquatec",
+    images: [
+      {
+        url: "/logo.png", // Place your image in the public folder
+        width: 63.04,
+        height: 93.22,
+        alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 const Blog = async () => {

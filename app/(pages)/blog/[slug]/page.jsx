@@ -46,6 +46,22 @@ export async function generateMetadata({ params, searchParams }, parent) {
       shortcut: "/icon.svg",
       apple: "/icon.svg",
     },
+    openGraph: {
+      title: post.title + ` - Aquatec`,
+      description: post.description,
+      url: `https://www.myaquatec.com/blog/${slug}`,
+      siteName: "Aquatec",
+      images: [
+        {
+          url: "/logo.png", // Place your image in the public folder
+          width: 63.04,
+          height: 93.22,
+          alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
   };
 }
 

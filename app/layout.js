@@ -55,6 +55,23 @@ schedule—Aquatec has you covered. - Aquatec`,
     shortcut: "/icon.svg",
     apple: "/icon.svg",
   },
+  openGraph: {
+    title: "Stay Hydrated, Anytime, Anywhere - Aquatec",
+    description: `Order top water brands and get them delivered to your door. One-time or on a
+schedule—Aquatec has you covered. - Aquatec`,
+    url: "https://www.myaquatec.com",
+    siteName: "Aquatec",
+    images: [
+      {
+        url: "/logo.png", // Place your image in the public folder
+        width: 63.04,
+        height: 93.22,
+        alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {

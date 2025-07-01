@@ -21,6 +21,22 @@ export const metadata = {
     shortcut: "/icon.svg",
     apple: "/icon.svg",
   },
+  openGraph: {
+    title: "Refreshing Convenience, One Delivery at a Time - Aquatec",
+    description: `At Aquatec, we believe access to clean, quality water should be easy, reliable, and stress-free. - Aquatec`,
+    url: "https://www.myaquatec.com/company",
+    siteName: "Aquatec",
+    images: [
+      {
+        url: "/logo.png", // Place your image in the public folder
+        width: 63.04,
+        height: 93.22,
+        alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 const Company = () => {
