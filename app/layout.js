@@ -51,9 +51,9 @@ schedule—Aquatec has you covered. - Aquatec`,
     },
   },
   icons: {
-    icon: "/icon.svg", // or "/favicon.ico" if you prefer
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   openGraph: {
     title: "Stay Hydrated, Anytime, Anywhere - Aquatec",
@@ -63,9 +63,9 @@ schedule—Aquatec has you covered. - Aquatec`,
     siteName: "Aquatec",
     images: [
       {
-        url: "https://myaquatec.com/icon.svg", // Your logo/preview image
-        width: 63.04,
-        height: 93.22,
+        url: "https://myaquatec.com/logo.png", // Your logo/preview image
+        width: 1200,
+        height: 630,
         alt: "Aquatec - Stay Hydrated, Anytime, Anywhere",
       },
     ],
@@ -77,7 +77,7 @@ schedule—Aquatec has you covered. - Aquatec`,
     title: "Stay Hydrated, Anytime, Anywhere - Aquatec",
     description: `Order top water brands and get them delivered to your door. One-time or on a
 schedule—Aquatec has you covered. - Aquatec`,
-    images: ["https://yourwebsite.com/icon.svg"],
+    images: ["https://myaquatec.com/logo.png"],
   },
 };
 
