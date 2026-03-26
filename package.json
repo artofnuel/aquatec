@@ -15,7 +15,7 @@
     "@sanity/vision": "^3.92.0",
     "classnames": "^2.5.1",
     "framer-motion": "^12.16.0",
-    "next": "15.3.3",
+    "next": "15.3.8",
     "next-sanity": "^9.12.0",
     "prettier-plugin-tailwindcss": "^0.6.12",
     "react": "^19.0.0",
